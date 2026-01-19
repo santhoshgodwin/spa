@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import Header from "../components/header";
 import KPICard from "../components/KPICard";
  
 export default function Home() {
