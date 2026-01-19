@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchWithCache } from "../services/api";
+import { fetchWithCache } from "../services/apiService";
 
 export default function Users(){
     const [users, setUsers] = useState([]);

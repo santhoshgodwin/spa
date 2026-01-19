@@ -4,6 +4,10 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Users from "./pages/Users";
+import Dashboard from "./pages/Dashboard"
+import NavBar from "./components/NavBar"
+import ApiDemo from "./pages/ApiDemo"
+import Home from "./pages/Home"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -33,17 +37,29 @@ function App() {
   //   </>
   // )
 
-  return(
-    <BrowserRouter>
-      {/* <nav>
-        <Link to="/">Users</Link>
-      </nav> */}
+  // return(
+  //   <BrowserRouter>
+  //     {/* <nav>
+  //       <Link to="/">Users</Link>
+  //     </nav> */}
 
+  //     <Routes>
+  //       <Route path="/" element={<Users/>}/>
+  //     </Routes>
+
+  //   </BrowserRouter>
+  // );
+
+  // return <Dashboard/>;
+
+  return (
+    <>
+      <NavBar/>
       <Routes>
-        <Route path="/" element={<Users/>}/>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/api-demo" element={<ApiDemo/>}/>
       </Routes>
-
-    </BrowserRouter>
+    </>
   );
 }
 
