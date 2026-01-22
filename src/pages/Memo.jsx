@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
  
-export default function PageOptimize() {
+export default function Memo() {
   const [data, setData] = useState(0);
 
   const result = useMemo( () => {

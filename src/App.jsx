@@ -7,7 +7,8 @@ import Users from "./pages/Users";
 import NavBar from "./components/NavBar"
 import ApiDemo from "./pages/ApiDemo"
 import Home from "./pages/Home"
-import PageOptimize from './pages/PageOptimization';
+import Memo from './pages/Memo';
+import Ref from './pages/Ref';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/api-demo" element={<ApiDemo/>}/>
-        <Route path="/page-optimization" element={<PageOptimize/>}/>
+        <Route path="/memo" element={<Memo/>}/>
+        <Route path="/ref" element={<Ref/>}/>
       </Routes>
     </>
   );
